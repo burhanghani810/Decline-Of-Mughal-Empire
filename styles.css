@@ -68,7 +68,7 @@ header {
 }
 
 .header-bureaucracy {
-  background-image: url('Images/bureaucracy pic.jpg');
+  background-image: url('./Images/bureaucracy pic.jpg');
 }
 
 .header-army {
