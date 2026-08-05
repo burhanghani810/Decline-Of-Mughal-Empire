@@ -1,0 +1,356 @@
+/* Central stylesheet extracted from inline styles. Responsive by default. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --beige: #f5f0dc;
+  --accent: #8cc4c4;
+  --accent-strong: #68a9a9;
+  --nav-bg: #f2e7a9;
+  --card-border: 1px solid rgba(0, 0, 0, 0.16);
+  --text-color: #222;
+  --page-bg: #fffdf8;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--page-bg);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  background-color: var(--accent);
+  transition: transform 0.18s ease, background-color 0.18s ease;
+}
+
+button:hover,
+a.button:hover {
+  background-color: var(--accent-strong);
+}
+
+header {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+}
+
+.header-regional-powers,
+.header-reional-powers {
+  background-image: url('Images/reional powers map in mughal empire.jpg');
+}
+
+.header-mughal-wallpaper {
+  background-image: url('Images/Mughal wallpaper.jpg');
+}
+
+.header-bureaucracy {
+  background-image: url('Images/mughal bureaucracy pic.jpg');
+}
+
+.header-army {
+  background-image: url('Images/army header background.jpeg');
+}
+
+.header-economical {
+  background-image: url('Images/header pic economical declain.webp');
+}
+
+.header-foreign {
+  background-image: url('Images/forign invasion mughal empire walpaper.jpg');
+}
+
+.bg-mughal-map {
+  background-image: url('Images/mughal map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-coins {
+  background-image: url('Images/coins wallpapers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-bisque {
+  background-color: bisque;
+}
+
+.no-bg {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+.go-btn {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 12px;
+  background-color: var(--nav-bg);
+  margin: 0 auto;
+}
+
+nav a {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active,
+nav a[aria-current="page"] {
+  background-color: var(--accent-strong);
+  color: #fff;
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+  box-shadow: 0 0 0 3px rgba(104, 169, 169, 0.25);
+}
+
+h1 {
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  width: min(90%, 700px);
+  margin: 20px auto;
+  text-align: center;
+}
+
+h2,
+h3 {
+  margin: 0.75rem 0;
+  text-align: left;
+}
+
+p {
+  margin: 0.9rem 0;
+  text-align: justify;
+}
+
+blockquote {
+  background-color: aquamarine;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.page-layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 12px 24px;
+}
+
+.sidebar {
+  flex: 0 0 320px;
+  max-width: 320px;
+  background-color: wheat;
+  padding: 20px;
+  border: 2px dotted rgba(0, 0, 0, 0.24);
+}
+
+.sidebar fieldset {
+  border: none;
+  padding: 0;
+}
+
+.sidebar legend {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cards-container {
+  flex: 1;
+  margin: 20px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.card {
+  background: var(--beige);
+  border: var(--card-border);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin: 0.75rem 0 0.5rem;
+}
+
+.card .card-link {
+  display: block;
+}
+
+.card .card-link:hover h3 {
+  text-decoration: underline;
+}
+
+.lead {
+  font-size: 1.08rem;
+  background-color: blanchedalmond;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.content-block {
+  max-width: 920px;
+  margin: 24px auto;
+  padding: 0 12px;
+}
+
+.wide-ol,
+.content-two-column .wide-ol {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.aside-card {
+  background-color: burlywood;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 18px;
+  text-align: left;
+  margin: 12px 0;
+}
+
+.two-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.two-cards article {
+  width: 100%;
+}
+
+.two-cols {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin: 18px 12px;
+}
+
+.two-cols .col {
+  flex: 1;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.two-cols h2 {
+  margin-top: 0;
+}
+
+.beige-bg {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  background: rgba(245, 240, 220, 0.9);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.beige-bg .col-600 {
+  flex: 1;
+  margin: 0;
+}
+
+.beige-bg img,
+.small-float-right {
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: black;
+  color: azure;
+  text-align: center;
+  padding: 18px 12px;
+  margin-top: 24px;
+}
+
+footer p {
+  margin: 0.65rem 0;
+}
+
+@media (max-width: 900px) {
+  .cards { flex-direction: column; align-items: center; }
+  .card { max-width: 95%; }
+  .page-layout { flex-direction: column; padding: 0 12px; }
+  .sidebar { width: 100%; max-width: 100%; margin: auto; }
+  .two-cols { flex-direction: column; }
+  .beige-bg { flex-direction: column; }
+  .beige-bg img { width: 100%; height: auto; }
+  header { min-height: 280px; }
+}
+
+@media (min-width: 900px) {
+  .card { flex: 0 0 calc(50% - 12px); max-width: calc(50% - 12px); }
+}
